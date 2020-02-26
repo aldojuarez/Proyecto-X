@@ -12,9 +12,9 @@
         <input type="text" value="" id="textoPantalla" disabled />
         <div>
             <button type="button" value="+" onclick="agregarNumero('+')">+</button>
-            <button type="button" value="-">-</button>
-            <button type="button" value="*">&times;</button>
-            <button type="button" value="/">&divide;</button>
+            <button type="button" value="-" onclick="agregarNumero('-')">-</button>
+            <button type="button" value="*" onclick="agregarNumero('*')">&times;</button>
+            <button type="button" value="/" onclick="agregarNumero('/')">&divide;</button>
 
             <button type="button" value="7" onclick="agregarNumero('7')">7</button>
             <button type="button" value="8" onclick="agregarNumero('8')">8</button>
@@ -30,9 +30,9 @@
 
             <button type="button" value="0" onclick="agregarNumero('0')">0</button>
             <button type="button" value="." onclick="agregarNumero('.')">.</button>
-            <button type="button" value="AllClear">AC</button>
+            <button type="button" value="AllClear" onclick="borradoTotal()">AC</button>
 
-            <button type="button" value="=">=</button>
+            <button type="button" value="=" onclick="resultado()">=</button>
         </div>
     </div>
 </body>
