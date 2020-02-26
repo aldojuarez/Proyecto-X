@@ -22,8 +22,6 @@ function resta(){
 function borradoTotal(){
     document.getElementById("textoPantalla").value = "";
 }
-
-//Pa que lo vean
 function resultado(){
     var pant=document.getElementById("textoPantalla").value;
     var suma = pant.indexOf("+");
@@ -57,10 +55,5 @@ function resultado(){
         var resultado= parseInt(primero[0])%100;
         borradoTotal();
         document.getElementById("textoPantalla").value=resultado;
-    }else if(raiz!=-1){
-        var primero= pant.split("v");
-        var resultado=Math.sqrt(parseFloat(primero[1]));
-        borradoTotal();
-        document.getElementById("textoPantalla").value=parseFloat(resultado);
-    }     
+    }   
 }
