@@ -5,30 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calculadora 3</title>
+    <script src="calculos.js"></script>
 </head>
 <body>
     <div>
         <input type="text" value="" id="textoPantalla" disabled />
         <div>
-            <button type="button" value="+">+</button>
+            <button type="button" value="+" onclick="agregarNumero('+')">+</button>
             <button type="button" value="-">-</button>
             <button type="button" value="*">&times;</button>
             <button type="button" value="/">&divide;</button>
 
-            <button type="button" value="7" onclick="agregarNumero()">7</button>
-            <button type="button" value="8" onclick="agregarNumero()">8</button>
-            <button type="button" value="9" onclick="agregarNumero()">9</button>
+            <button type="button" value="7" onclick="agregarNumero('7')">7</button>
+            <button type="button" value="8" onclick="agregarNumero('8')">8</button>
+            <button type="button" value="9" onclick="agregarNumero('9')">9</button>
 
-            <button type="button" value="4" onclick="agregarNumero()">4</button>
-            <button type="button" value="5" onclick="agregarNumero()">5</button>
-            <button type="button" value="6" onclick="agregarNumero()">6</button>
+            <button type="button" value="4" onclick="agregarNumero('4')">4</button>
+            <button type="button" value="5" onclick="agregarNumero('5')">5</button>
+            <button type="button" value="6" onclick="agregarNumero('6')">6</button>
 
-            <button type="button" value="1" onclick="agregarNumero()">1</button>
-            <button type="button" value="2" onclick="agregarNumero()">2</button>
-            <button type="button" value="3">3</button>
+            <button type="button" value="1" onclick="agregarNumero('1')">1</button>
+            <button type="button" value="2" onclick="agregarNumero('2')">2</button>
+            <button type="button" value="3" onclick="agregarNumero('3')">3</button>
 
-            <button type="button" value="0">0</button>
-            <button type="button" value=".">.</button>
+            <button type="button" value="0" onclick="agregarNumero('0')">0</button>
+            <button type="button" value="." onclick="agregarNumero('.')">.</button>
             <button type="button" value="AllClear">AC</button>
 
             <button type="button" value="=">=</button>
