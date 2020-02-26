@@ -19,6 +19,17 @@ function resta(){
     }
 }
 
+function suma(){
+    var pant=document.getElementById("textoPantalla").value;
+    var resta = pant.indexOf("+");
+    if(resta!=-1){
+        var primero= pant.split("+");
+        var resultado= parseInt(primero[0])+parseInt(primero[1]);
+        borradoTotal();
+        document.getElementById("textoPantalla").value=resultado;
+    }
+}
+
 function borradoTotal(){
     document.getElementById("textoPantalla").value = "";
 }
