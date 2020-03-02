@@ -6,34 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calculadora 3</title>
     <script src="calculos.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <input type="text" value="" id="textoPantalla" disabled />
-        <div>
-            <button type="button" value="+" onclick="agregarNumero('+')">+</button>
-            <button type="button" value="-" onclick="agregarNumero('-')">-</button>
-            <button type="button" value="*" onclick="agregarNumero('*')">&times;</button>
-            <button type="button" value="/" onclick="agregarNumero('/')">&divide;</button>
-
-            <button type="button" value="7" onclick="agregarNumero('7')">7</button>
-            <button type="button" value="8" onclick="agregarNumero('8')">8</button>
-            <button type="button" value="9" onclick="agregarNumero('9')">9</button>
-
-            <button type="button" value="4" onclick="agregarNumero('4')">4</button>
-            <button type="button" value="5" onclick="agregarNumero('5')">5</button>
-            <button type="button" value="6" onclick="agregarNumero('6')">6</button>
-
-            <button type="button" value="1" onclick="agregarNumero('1')">1</button>
-            <button type="button" value="2" onclick="agregarNumero('2')">2</button>
-            <button type="button" value="3" onclick="agregarNumero('3')">3</button>
-
-            <button type="button" value="0" onclick="agregarNumero('0')">0</button>
-            <button type="button" value="." onclick="agregarNumero('.')">.</button>
-            <button type="button" value="AllClear" onclick="borradoTotal()">AC</button>
-
-            <button type="button" value="=" onclick="resultado()">=</button>
+    <table class="calculadora">
+        <tr>
+            <td colspan="4"><input type="text" value="" id="textoPantalla" disabled /></td>
+        </tr>
+        <tr>
+            <td><button class="funcion" type="button" value="+" onclick="agregarNumero('+')">+</button></td>
+            <td><button class="funcion" type="button" value="-" onclick="agregarNumero('-')">-</button></td>
+            <td><button class="funcion" type="button" value="*" onclick="agregarNumero('*')">&times;</button></td>
+            <td><button class="funcion" type="button" value="/" onclick="agregarNumero('/')">&divide;</button></td>
+        </tr>
+        <tr>
+            <td><button class="num" type="button" value="7" onclick="agregarNumero('7')">7</button></td>
+            <td><button class="num" type="button" value="8" onclick="agregarNumero('8')">8</button></td>
+            <td><button class="num" type="button" value="9" onclick="agregarNumero('9')">9</button></td>
+            <td><button class="ac" type="button" value="AllClear" onclick="borradoTotal()">AC</button></button></td>
+        </tr>
+        <tr>
+            <td><button class="num" type="button" value="4" onclick="agregarNumero('4')">4</button></td>
+            <td><button class="num" type="button" value="5" onclick="agregarNumero('5')">5</button></td>
+            <td><button class="num" type="button" value="6" onclick="agregarNumero('6')">6</button></td>
+            <td rowspan="3"><button class="funcion1" type="button" value="=" onclick="resultado()">=</button></td>
+        </tr>
+        <tr>
+            <td><button class="num" type="button" value="3" onclick="agregarNumero('3')">3</button></td>
+            <td><button class="num" type="button" value="2" onclick="agregarNumero('2')">2</button></td>
+            <td><button class="num" type="button" value="1" onclick="agregarNumero('1')">1</button></td>  
+        </tr>
+        <tr>
+            <td><button class="num" type="button" value="0" onclick="agregarNumero('0')">0</button></td>
+            <td><button class="num"></button></td>
+            <td><button class="num"></button></td>
+        </tr>
+            
         </div>
-    </div>
+    </table>
 </body>
 </html>
